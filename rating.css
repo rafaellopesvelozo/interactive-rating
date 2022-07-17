@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #141519;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-rating{
+    width: 375px;
+    height: 380px;
+    background-color: #171E28;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 50%;
+    background-color: #262F38;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.info h1{
+    color: #FFFFFF;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.info p{
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    color: #545B65;
+    margin-top: 10px;
+    
+}
+
+.numbers{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    
+    
+   
+}
+.one, .two, .three, .four, .five{
+    background-color: #262F38;
+    padding: 15px 20px;
+    border-radius: 50%;
+    color: #5D656E;
+    cursor: pointer;
+
+}
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover{
+    background-color: #7B8698;
+    color: #FFFFFF;
+}
+.one:active, .two:active, .three:active, .four:active, .five:active{
+    background-color: #FC7614;
+}
+.submit{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+.submit input{
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #FC7614;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.submit input:hover{
+  
+    background-color: #FFFFFF;
+    color: #FC7614;
+    
+    cursor: pointer;
+}
+.active{
+    background-color: #7B8698;
+    color: #FFFFFF;
+}
+
+
+
+
+@media screen and (max-width:400px){
+    .card-rating, .thankyou{
+        width: 320px;
+        padding: 20px;
+    }
+    .info h1{
+        text-align: center;
+    }
+    .numbers{
+       gap: 10px;
+    }
+    .submit{
+        width: 270px;
+    }
+    .info p{
+        text-align: center;
+        width: 280px;
+    }
+
+    .one, .two, .three, .four, .five{
+        background-color: #262F38;
+        padding: 13px 18px;
+        border-radius: 50%;
+        color: #5D656E;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    .card-rating,.thankyou {
+        width: 340px;  
+    }
+    .card{
+        padding: 10px;
+    }
+    .info h1{
+        text-align: center;
+    }
+    .numbers{
+       gap: 15px;
+    }
+    .one, .two, .three, .four, .five{
+        background-color: #262F38;
+        padding: 13px 18px;
+        border-radius: 50%;
+        color: #5D656E;
+        cursor: pointer;
+    
+    }
+    .submit{
+        width: 280px;
+    }
+}
+
+

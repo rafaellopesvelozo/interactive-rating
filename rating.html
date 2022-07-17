@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--rating css-->
+    <link rel="stylesheet" href="rating.css">
+
+    <!--thank you css-->
+    <link rel="stylesheet" href="thankyou.css">
+
+    <title>Rating</title>
+</head>
+
+<body>
+    <div class="card-rating" id="card-rate1">
+        <div class="card">
+            <div class="icon">
+                <img src="images/icon-star.svg" alt="">
+            </div>
+            <div class="info">
+                <h1 id="h1">How did we do ?</h1>
+                <p>Please let us know how we did with your support
+                    request. All feedback is appreciated to help us
+                    improve our offering!
+                </p>
+            </div>
+
+            <div class="numbers" id="numbers">
+
+                <div class="one btn_rating">1</div>
+                <div class="two btn_rating">2</div>
+                <div class="three btn_rating active">3</div>
+                <div class="four btn_rating">4</div>
+                <div class="five btn_rating">5</div>
+            
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="SUBMIT" id="submit">
+            </div>
+        </div>
+    </div>
+
+    <div class="thankyou" id="card-rate2">
+
+        <div class="card" id="number-select">
+            <div class="icon2">
+                <img src="images/illustration-thank-you.svg" alt="">
+            </div>
+            <div class="select">
+                <p class="text-select" id="result">You selected <span class="score"></span> out of 5</p>
+    
+                <h1>Thank you!</h1>
+    
+                <p>
+                    We appreciate you taking the time to give a rating.
+                    if you ever need more support, don´t hesitate to
+                    get in touch!
+                </p>
+               
+            </div>
+    
+        </div>
+
+    <script src="rating.js"></script>
+    
+</body>
+
+</html>
